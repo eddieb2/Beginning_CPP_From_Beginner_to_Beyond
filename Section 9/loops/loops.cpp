@@ -189,15 +189,28 @@ int main()
 
 	// Instructor's solution - retyped w/o solution in front of me
 
-	size_t index{ 0 };
-	int count{ 0 };
+	//size_t index{ 0 };
+	//int count{ 0 };
 
-	while (index < vec.size() && vec[index] != -99)
+	//while (index < vec.size() && vec[index] != -99)
+	//{
+	//	cout << index << endl;
+	//	index++;
+	//	count++;
+	//}
+
+	//cout << count;
+
+	char selection{};
+
+	do
 	{
-		cout << index << endl;
-		index++;
-		count++;
-	}
-
-	cout << count;
+		cout << "\n----------------";
+		cout << "1. Do this" << endl;
+		cout << "2. Do that" << endl;
+		cout << "3. Do else" << endl;
+		cout << "Q. Quit" << endl;
+		cout << "\nEnter your selection: ";
+		cin >> selection;
+	} while (selection != 'q' && selection != 'Q');
 }
