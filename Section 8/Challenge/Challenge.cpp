@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
 	/*
-	--take user input in cents
-	--figure out how much exact change
+		--take user input in cents
+		--figure out how much exact change
 		- divide by dollar value && subtract dollars X dollar value from total.... > quarters > dimes > nickels > pennies
 		- 95 (total) / 100 (value of dollar) = 0 
 		- total - (0*100 <-- dollar value) = 95 (new total)
