@@ -45,7 +45,7 @@ int main()
         pyramid.push_back(row);
     }
 
-    // Insert Elements int midpoint positions
+    // Insert Elements into midpoint positions
     int count{ 0 }; 
 
     for (size_t i = 0; i < pyramid.size(); i++)
@@ -107,37 +107,3 @@ int main()
     cout << endl;
     return 0;
 }
-
-/////// GRID //////////
-// create X number of vectors based on the length of text -- 2d vector
-// calculate number of rows = length of text
-// calculate number of columns = 2*(rows - 1)
-
-// How do we input chars into the grid?
-// first row - find the center. mid point of first row is #of colums 
-
-/*
-             012
-User Input - ABC
-3 rows x 5 column
-
-   01234
-0 [  A  ] 3rd element - 2nd index = midpoint ------- #columns % #rows == index of midpoint ----- 5%3 = 2
-1 [ ABA ]
-2 [ABCBA]
-
-4 rows x 7 columns
-User Input - 1234
-[   1   ] 4th element - 3rd index = midpoint ------ #columns % #rows == index of midpoint -----
-[  121  ]  7%4 = 3
-[ 12321 ]
-[1234321]
-
-User Input - 12345
-5 rows x 9 column
-[    1    ]
-[   121   ]
-[  12321  ]
-[ 1234321 ]
-[123454321]
-*/
